@@ -1,168 +1,140 @@
+/* --------Base Styles--------- */
+
 * {box-sizing: border-box;
 }
 
-html {font-size: 1em; /* 16px */
+html {font-size: .9em; 
     font-family: 'Merriweather', serif;
 }
 
-.main-header, h1{
-    text-align: center;
-    margin: 0;
+body {
+    margin: 0 auto;
 }
 
-.main-header p {
-    color: #cbcbcb;
+h1 {
+    font-size: 1.3em;
+    background-color: #2d3945;
+    color: white;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin: 0;
 }
 
 p {
     color: #959696;
-    line-height: 1.6;
 }
+/* ---------------------------- */
 
-h1 {
-    background-color: #2d3945;
-    color: white;
-    padding: 27px;
-    font-size: 1.33em;
-    margin-bottom: 30px;
+
+/* --------Main Header--------- */
+.main-header{
+    text-align: center;
+} 
+
+.main-header h1 {
+    padding: 25px 0;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .cta {
-    text-align: center;
-    border-bottom: 4px solid #2d3945;
-    margin: 0 15px 4px 15px;
-    padding-bottom: 25px;
+    padding: 0 15px;
 }
 
 .cta p {
-    margin-top: 15px;
+    color: #cbcbcb;
+    border-bottom: 4px solid #2d3945;
+    padding-bottom: 35px;
+    margin-bottom: 2px;
 }
 
 hr {
-    border-top: 2px solid #2d3945;
-    margin: 0 15px 0 15px;
-
+    margin: 0 15px;
+    border-bottom: 2px solid #2d3945;
 }
+/* ---------------------------- */
 
-h2 {
-    font-size: 1.22em;
-    margin-bottom: 0;
-}
 
-.form {
+/* -------Form Styles--------- */
+
+form {
     display: flex;
-    padding-top: 25px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
+    margin: 0 4px;
 }
 
 legend {
     font-weight: 600;
-    font-size: 1.22em;
+    font-size: 1.25em;    
 }
 
-legend {
-    margin: 5px 0;
+ul li {
+    list-style-type: none; 
+
 }
 
-input, label, select  {
+.form1 ul li {
+   margin: 10px 0;
+}
+
+.form1 li {
+    display: flex;
+    flex-direction: column;
+}
+.form1 li label {
+    margin: 10px 0;
+}
+
+input, label, select {
     color: #959696;
 }
+
+select:invalid {
+    color: #b6b6b6;
+}
+
 input, select {
     border: none;
     background-color:#eeeeee;
     border-radius: 5px;
-    padding: 18px 0;
+    padding: 15px 0;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
     padding-left: 20px;
+    border: 2px solid #eeeeee; /* prevents focus border from moving labels*/
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: 0;
+    border: 2px solid #607891;
+    border-radius: 5px;
 }
 
 input::placeholder {
     text-align: right;
     padding-right: 25px;
     font-style: italic;
-    font-size: 13px;
+    font-size: .8em;
     color: #b6b6b6;
-}
-label {
-    padding: 20px 0 15px 0;
-}
-
-input:focus {
-    outline: 0;
-    border: 2px solid #607891;
-}
-
-select:focus {
-    outline: 0;
-    border: 2px solid #607891;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 10px;
-}
-
-ul p {
-    margin-bottom: 0;
-}
-
-li {
-    margin: 20px 0;
-}
-
-.format {
-    border-top: 2px solid #2d3945;
-    margin-top: 40px;
-}
-
-.format h2 {
-    margin: 30px 0;
 }
 
 input[id=zip] {
     width: 50%;
+
   }
 
-.format p:nth-of-type(2) {
-    margin-top: 30px;
-}
-
-.format p:nth-of-type(3) {
-   margin-top: 35px;
-}
-
-textarea {
-    background-color:  #eeeeee;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-}
-
-button {
-    font-family: 'Merriweather', serif;
-    background-color: #4ebbb5;
-    color: #fff;
-    border: none;
-    padding: 23px;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.2em;
-    width: 100%;
-    cursor: pointer; 
-}
-
-button + p {
-    text-align: center;
-    margin-bottom:100px;
-    color: #bab7b7;
-    font-size: .9em;
-}
+  .textarea {
+      border-radius: 5px;
+  }

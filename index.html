@@ -15,37 +15,45 @@
 <body>
     <header class="main-header">
         <h1>THE CODE REVIEW</h1>
-        <div class="cta">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
-        <hr>
+            <div class="cta">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <hr>
     </header>
 
-        <form class="form">
-            <fieldset>
+        <form>
+            <fieldset class="form1">
                 <legend>Contact Information</legend>
-                
-                <label for="name">Full Name</label>
-                <input type="text" id ="name" name="user-name" placeholder="Required">
+                <ul>
+                <li><label for="name">Full Name</label>
+                    <input type="text" id ="name" name="user-name"  required="required" placeholder="Required">
+                </li> 
 
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="user-email" placeholder="Required">
+                <li>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user-email" required="required" placeholder="Required">
+                </li>
 
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="user-phone>">
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="user-phone>">
+                </li>
                 
+                <li>
                 <label for="address">Street Address</label>
                 <input type="text" id="address" name="user-address">
+                </li>
 
+                <li>
                 <label for="city">City</label>
                 <input type="text" id="city" name="user-city">
-            
+                </li>     
+                
+                <li>
                 <label>State</label>
-                <select id="state" name="user-state">
-                    <optgroup>
-                        <option selected="true" disabled="disabled">Choose State</option>
-                    </optgroup>
+                <select  required id="state" name="user-state">
+                    <option value="" selected disabled="disabled">Choose State</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
                     <option value="arizona">Arizona</option>
@@ -97,15 +105,22 @@
                     <option value="wisconsin">Wisconsin</option>
                     <option value="wyoming">Wyoming</option>
                 </select>
+                </li>
 
+                <li>
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user-zip">
+                </li>
+            </ul>
+            </fieldset>
 
+            <hr>
+
+            <fieldset>
                 <div class="format">
-                    <h2>Newsletter</h2>
-                    <ul>
-                    <p>Select the newsletters you would like to receive</p>
-                        
+                    <legend>Newsletter</legend>
+                        <ul>
+                         <p>Select the newsletters you would like to receive</p>
                         <li><input type="checkbox" id="checked1" name="html-news" value="html-checked"> 
                             <label for="checked1">HTML News</label></li>
                             
@@ -116,22 +131,18 @@
                             <label for="checked3">Javascript News</label></li>
 
                         <p>Newsletter format</p>
-                        <li><input type="radio" id="format1" name="html-format" value="html-selected">
+                        <li><input type="radio" id="format1" name="selection" value="html-selected">
                             <label for="format1">HTML</label> </li>
 
-                        <li><input type="radio" id="format2" name="plain-text" value="plain-selected">
+                        <li><input type="radio" id="format2" name="selection" value="plain-selected">
                             <label for="format2">Plain Text</label></li>
-
-
-                    <p>Other topics you'd like to hear about</p>
-                </ul>
-                
-                    <textarea name="" id="suggestions" cols="32" rows="6"></textarea>
-                    
-                    <button type="submit">Sign Up</button>
-                    <p><i>Copyright The Code Review</i></p>
-                </div>
-                </div>
+                            
+                        <p>Other topics you'd like to hear about</p>
+                        <textarea name="" id="suggestions" cols="30" rows="6"></textarea>
+                        <button type="submit">Sign Up</button>
+                        <p><i>Copyright The Code Review</i></p>
+                    </ul>
+                 </div>
             </fieldset>
         </form>  
 </body>

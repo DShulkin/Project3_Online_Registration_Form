@@ -61,10 +61,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-/* pre {
+pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-} */
+} 
 
 /* Text-level semantics
    ========================================================================== */
@@ -157,6 +157,7 @@ img, fieldset {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+button,
 input,
 optgroup,
 select,
