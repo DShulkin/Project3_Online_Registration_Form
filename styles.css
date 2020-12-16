@@ -87,6 +87,10 @@ ul li {
 
 }
 
+.form1 ul {
+    margin-bottom: 0;
+}
+
 .form1 ul li {
    margin: 10px 0;
 }
@@ -116,6 +120,7 @@ input, select, textarea {
 
 input[type="text"],
 input[type="email"],
+select[id="state"],
 textarea {
     padding-left: 20px;
     border: 2px solid #eeeeee; /* prevents focus border from moving labels*/
@@ -145,7 +150,7 @@ input[id=zip] {
 
 .line:nth-child(2) {
     margin-bottom: 25px;
-    margin: 20px 15px;
+    margin: 20px 15px 30px 15px;
 }
 
 
@@ -208,10 +213,28 @@ button + p {
 
 @media screen and (min-width: 768px) {
 
-    .cta {
+    .cta  {
+        display: flex;
+        flex-direction: column;
         margin-top: 40px;
-        padding-bottom: 20px;;
-
+        padding-bottom: 20px;
+        
     }
+
+    .form1 ul li {
+        flex-direction: row;
+     }
+
+     .form1 li label {
+        flex-basis: 150px;
+        margin: 0;
+        align-self: center;
+     }
+
+     input[type=text],
+     input[type=email],
+     select[id="state"] {
+         flex: 1;
+     }
 
 }
