@@ -163,6 +163,10 @@ hr:nth-child(2) {
     padding: 10px 0 0 0;
 }
 
+.form2 ul p:nth-of-type(3) {
+    padding: 10px 0 0 0;
+}
+
 .form2 label{
     vertical-align:text-top;
 }
@@ -184,7 +188,7 @@ button[type="submit"] {
     text-align: center;
     cursor: pointer; 
     margin-top:20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 button + p {
