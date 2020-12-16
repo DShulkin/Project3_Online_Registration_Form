@@ -8,6 +8,8 @@ html {font-size: .9em;
 }
 
 body {
+    display:flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -48,6 +50,9 @@ p {
     border-bottom: 4px solid #2d3945;
     padding-bottom: 35px;
     margin-bottom: 2px;
+}
+.line {
+    border-bottom: 2.5px solid #2d3945;
 }
 
 hr {
@@ -138,9 +143,12 @@ input[id=zip] {
 
   }
 
-hr:nth-child(2) {
+.line:nth-child(2) {
     margin-bottom: 25px;
+    margin: 20px 15px;
 }
+
+
 
 .form2 {
     display: flex;
@@ -196,4 +204,14 @@ button + p {
     margin-bottom:100px;
     color: #b6b6b6;
     font-size: .9em;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cta {
+        margin-top: 40px;
+        padding-bottom: 20px;;
+
+    }
+
 }
