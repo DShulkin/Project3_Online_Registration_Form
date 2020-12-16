@@ -54,6 +54,8 @@ hr {
     margin: 0 15px;
     border-bottom: 2px solid #2d3945;
 }
+
+
 /* ---------------------------- */
 
 
@@ -100,7 +102,7 @@ select:invalid {
     color: #b6b6b6;
 }
 
-input, select {
+input, select, textarea {
     border: none;
     background-color:#eeeeee;
     border-radius: 5px;
@@ -108,7 +110,8 @@ input, select {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
     padding-left: 20px;
     border: 2px solid #eeeeee; /* prevents focus border from moving labels*/
 }
@@ -135,6 +138,50 @@ input[id=zip] {
 
   }
 
-  .textarea {
-      border-radius: 5px;
-  }
+hr:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form2 ul {
+    margin-top: 0;
+}
+
+.form2 ul li {
+    margin: 20px 0;
+}
+
+.form2 ul p:nth-of-type(2) {
+    padding: 10px 0 0 0;
+}
+
+textarea,
+button{
+    width: 100%; 
+}
+
+button[type="submit"] {
+    font-family: 'Merriweather', serif;
+    font-size: 1.23em;
+    background-color: #4ebbb5;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer; 
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+button + p {
+    text-align: center;
+    margin-bottom:100px;
+    color: #bab7b7;
+    font-size: .9em;
+}
