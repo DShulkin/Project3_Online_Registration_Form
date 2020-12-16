@@ -53,6 +53,7 @@ p {
 }
 .line {
     border-bottom: 2.5px solid #2d3945;
+    margin-bottom: 5px;
 }
 
 hr {
@@ -163,6 +164,10 @@ input[id=zip] {
     flex-direction: column;
 }
 
+.form2 legend {
+    margin-bottom: 10px;
+}
+
 .form2 ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -172,7 +177,7 @@ input[id=zip] {
 }
 
 .form2 ul li {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .form2 ul p:first-of-type {
@@ -228,11 +233,15 @@ button + p {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     form {
         margin-top: 20px;
+    }
+
+    .form1 ul {
+        margin-top: 0;
     }
 
     .form1 ul li {
